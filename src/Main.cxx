@@ -9,11 +9,12 @@
 #include "SelectionSort.hpp"
 #include "InsertionSort.hpp"
 #include "MergeSort.hpp"
+#include "QuickSort.hpp"
 
 int main()
 {
-    std::vector<int> vec {2, 3, 5, 45, 4, 32, 2, 12, 45, 45 , 7, 65, 34};
-    algo::sort::MergeSort(vec);
+    std::vector<int> vec {2, 3, 5, 45, 4, 32, 2, 12, 45, 45 , 7, 65, 34, 56};
+    algo::sort::QuickSort(vec);
     if (algo::sort::IsSorted(vec)) {
         std::cout << "Vector is sorted" << std::endl;
     } else {
